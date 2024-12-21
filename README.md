@@ -12,7 +12,6 @@ Youtube demo : https://youtu.be/gO-RcNphq44
 ## 🚀 Features
 
 - **Fast Image Generation**: Generate high-quality images in under 2 seconds
-- **Responsive Design**: Fully responsive across all device sizes
 - **Real-time Updates**: Live loading states and image preview
 - **Efficient Storage**: Automated image storage using Vercel Blob Storage
 
