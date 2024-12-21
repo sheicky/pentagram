@@ -1,40 +1,111 @@
 # Pentagram: Instagram, but with AI Images
 
-## Getting Started
 
-First, clone the GitHub repository:
 
+A modern web application that generates high-quality images using Stable Diffusion XL Turbo, powered by Modal's A10G GPU infrastructure.
+
+![image](https://github.com/user-attachments/assets/a5d0e6fd-4175-45b1-878f-f81f07291b54)
+
+
+Youtube demo : https://youtu.be/gO-RcNphq44
+
+## 🚀 Features
+
+- **Fast Image Generation**: Generate high-quality images in under 2 seconds
+- **Responsive Design**: Fully responsive across all device sizes
+- **Real-time Updates**: Live loading states and image preview
+- **Efficient Storage**: Automated image storage using Vercel Blob Storage
+
+## ⚡ Tech Stack
+
+### Frontend
+- Next.js 14 (React)
+- TypeScript
+- Tailwind CSS
+- React Hooks
+
+### Backend
+- Next.js API Routes
+- Modal Cloud GPU (NVIDIA A10G)
+- Stable Diffusion XL Turbo
+- Vercel Blob Storage
+
+## 🛠 Installation
+
+1. Clone the repository:
 ```bash
-git clone https://github.com/team-headstart/pentagram.git
+git clone https://github.com/yourusername/project-name.git
 ```
 
-Then, navigate to the project directory:
-
-```bash
-cd pentagram
-```
-
-Then, install the dependencies:
-
+2. Install dependencies:
 ```bash
 npm install
 ```
 
-Run the development server:
+3. Set up environment variables:
+Create a `.env` file in the root directory with the following variables:
+```env
+PENTAGRAM_URL=your_pentagram_url
+API_TOKEN_PENTAGRAM=your_api_token
+BLOB_READ_WRITE_TOKEN=your_blob_token ( from vercel)
+```
 
+4. Run the development server:
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌐 Usage
 
-Youtube demo : https://youtu.be/gO-RcNphq44
+1. Open the application in your browser
+2. Enter a description of the image you want to generate
+3. Click "Generate" and wait for your image
+4. The generated image will be displayed and automatically saved
+
+## ⚙️ Architecture
+
+```mermaid
+graph LR
+    A[User Input] --> B[Next.js API]
+    B --> C[Modal A10G GPU]
+    C --> D[SDXL-Turbo]
+    D --> E[Vercel Blob Storage]
+    E --> F[Client Display]
+```
+
+## 🔑 Environment Variables
+
+- `PENTAGRAM_URL`: URL for the image generation service
+- `API_TOKEN_PENTAGRAM`: Authentication token for the API
+- `BLOB_READ_WRITE_TOKEN`: Token for Vercel Blob Storage access
+
+## 🚀 Deployment
+
+This project is optimized for deployment on Vercel:
+
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Configure environment variables in Vercel dashboard
+4. Deploy!
+
+## 📈 Performance
+
+- Image Generation: ~2 seconds
+- API Response Time: ~200ms
+- Blob Storage Upload: ~500ms
 
 
 
-## Learn More
+## 👏
 
-To learn more about Next.js, take a look at the following resources:
+- [Modal](https://modal.com/) for GPU infrastructure
+- [Stable Diffusion](https://stability.ai/) for the SDXL-Turbo model
+- [Vercel](https://vercel.com/) for hosting and blob storage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+
+Made with ❤️ by  Sheick
+
+
+
+
