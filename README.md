@@ -74,7 +74,7 @@ graph LR
 
 ## 🔑 Environment Variables
 
-- `PENTAGRAM_URL`: URL for the image generation service
+- `PENTAGRAM_URL`: URL for the image generation service (from modal)
 - `API_TOKEN_PENTAGRAM`: Authentication token for the API
 - `BLOB_READ_WRITE_TOKEN`: Token for Vercel Blob Storage access
 
