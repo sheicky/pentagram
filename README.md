@@ -4,7 +4,8 @@
 
 A modern web application that generates high-quality images using Stable Diffusion XL Turbo, powered by Modal's A10G GPU infrastructure.
 
-![image](https://github.com/user-attachments/assets/a5d0e6fd-4175-45b1-878f-f81f07291b54)
+![image](https://github.com/user-attachments/assets/a3a632a3-dc4a-4411-b555-fee909206fe4)
+
 
 
 Youtube demo : https://youtu.be/gO-RcNphq44
